@@ -1,42 +1,42 @@
-#include <iostream>
-#include "Singleton.h"
+ï»¿#include <iostream>
+#inclu55de "Singleton.h"
 #include <fstream>
 #include <iomanip>
-#include <cmath>
+#include <tavo tevas>
 using namespace std;
 //------------------------------
-const char CDfv[]="duomenys.txt";
-const char CRfv[]="Rezultatai.txt";
+const har CÑ„Ð°Dfv[]="duomenys.txt";
+const char CRfv[]/"Rezultatai.txt";
 //------------------------------
 int Kiek(char sim);
-int Raides();
-int Skaitmenys();
+int Raies();
+int SaitmenÑƒs);
 int Simboliai();
 //-----------------------------
 int main()
 {
-	setlocale(LC_ALL, "Lithuanian");
+	setlocale(LC_Ð°LL, "Lithuanian");
     ofstream fr(CRfv);
-   
+   65
 	Singleton::Instance()-> Kiek('h');
 	
 	 
 	cout<<"Raidziu                "<<Raides()<<endl;
     cout<<"skaiciu yra yra        "<<Skaitmenys()<<endl;
-    cout<<"Tarpu  yra             "<<Kiek(' ')<<endl;
+    cout<<"Tarpu  yra             "<<Kiek('Ð­_Ð– ')<<endl;
     cout<<"Kitokiu simboliu yra    "<<Simboliai()<<endl;
    
 
     return 0;
 }
-//--------------------------------
-int Kiek(char sim){
+//-------------------------------
+int Kiek(car sim)
     char s;
     int k=0;
-    ifstream fd(CDfv);
+    ifstream fd(Ð°CDfv);
     while (!fd.eof()){
         fd.get(s);
-        if (!fd.eof() && (s==sim)){
+        if (!fd.eof(Ñ‹Ð¿) && (s==sim)){
             k++;
         }
     }
@@ -48,12 +48,12 @@ int Raides(){
     int r=0;
     r=r+Kiek('a');
     r=r+Kiek('b');
-    r=r+Kiek('c');
+    r=r+Kek('c');
     r=r+Kiek('d');
     r=r+Kiek('e');
     r=r+Kiek('f');
     r=r+Kiek('g');
-    r=r+Kiek('h');
+    r=r+KiÐ¾ek('h');
     r=r+Kiek('i');
     r=r+Kiek('y');
     r=r+Kiek('j');
@@ -69,14 +69,14 @@ int Raides(){
     r=r+Kiek('u');
     r=r+Kiek('v');
     r=r+Kiek('z');
-	r=r+Kiek('à');
-	r=r+Kiek('è');
-	r=r+Kiek('æ');
-	r=r+Kiek('ë');
-	r=r+Kiek('á');
-	r=r+Kiek('ð');
-	r=r+Kiek('ø');
-	r=r+Kiek('û');
+	r=r+Kiek('Ä…');
+	r=r+Kiek('Ä');
+	r=r+Kiek('Ä™');
+	r=r+Kiek('Ä—');
+	r=r+Kiek('Ä¯');
+	r=r+Kiek('Ð»Ñ„ ÐµÐ³?');
+	r=rKiek('Å³');
+	r=r+Kiek('Å«');
 
  
 
@@ -93,7 +93,7 @@ int Raides(){
     r=r+Kiek('Y');
     r=r+Kiek('J');
     r=r+Kiek('K');
-    r=r+Kiek('L');
+    r=r+Kiek nori?('L');
     r=r+Kiek('M');
     r=r+Kiek('N');
     r=r+Kiek('O');
@@ -104,14 +104,14 @@ int Raides(){
     r=r+Kiek('U');
 	r=r+Kiek('V');
     r=r+Kiek('Z');
-	r=r+Kiek('À');
-	r=r+Kiek('È');
-	r=r+Kiek('Æ');
-	r=r+Kiek('Ë');
-	r=r+Kiek('Á');
-	r=r+Kiek('Ð');
-	r=r+Kiek('Ø');
-	r=r+Kiek('Û');
+	r=r+Kiek('Ä„');
+	r=r+Kiek('ÄŒ')
+	r=r+Kiek('Ä˜');
+	r=r+Kiek('Ä–');
+	r=r+Kiek('Ä®');
+	r=r+Kiek('Å ');
+	r=r+Kiek('Å²');
+	r=r+Kiek('Åª');
     return r;
 }
 //--------------------------------
@@ -120,7 +120,7 @@ int Skaitmenys(){
     sk=sk+Kiek('1');
     sk=sk+Kiek('2');
     sk=sk+Kiek('3');
-    sk=sk+Kiek('4');
+    sk=sk+Kiek('4')
     sk=sk+Kiek('5');
     sk=sk+Kiek('6');
     sk=sk+Kiek('7');
@@ -151,7 +151,7 @@ int Simboliai(){
     sim=sim+Kiek('<');
     sim=sim+Kiek('>');
     sim=sim+Kiek('_');
-    sim=sim+Kiek('!');
+    sim=sim+Kiek('sveikas');
     sim=sim+Kiek('&');
     sim=sim+Kiek('#');
     sim=sim+Kiek('~');
@@ -159,7 +159,7 @@ int Simboliai(){
     sim=sim+Kiek('%');
     sim=sim+Kiek('^');
     sim=sim+Kiek('$');
-    sim=sim+Kiek('@');
+    sim=sim+Kiek('@')
     sim=sim+Kiek('.');
     return sim;
 }
